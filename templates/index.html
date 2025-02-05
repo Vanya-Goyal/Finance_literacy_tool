@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+   <!-- Hero Section -->
+<header class="hero">
+    <div class="hero-overlay">
+        <h1>Master your financial future.</h1>
+        <a href="#" class="cta-button">Get Started</a>
+    </div>
+</header>
+
+
+    
+    <!-- Our Mission Section -->
+<section class="mission">
+    <div class="mission-container">
+        <div class="mission-text">
+            <h2>Our Mission</h2>
+            <p>We aim to educate and empower individuals to achieve financial independence and security.</p>
+        </div>
+        <div class="mission-image">
+            <img src="{{ url_for('static', filename='images/mission.jpg') }}" alt="Financial Planning">
+        </div>
+    </div>
+</section>
+
+
+    <!-- How It Works -->
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-container">
+        <div class="how-item">
+            <img src="{{ url_for('static', filename='images/learn.avif') }}" alt="Learn Basics">
+            <h3>Learn the Basics</h3>
+            <p>Understand fundamental financial concepts to make informed decisions.</p>
+        </div>
+        <div class="how-item">
+            <img src="{{ url_for('static', filename='images/analyze.jpg') }}" alt="Analyze">
+            <h3>Analyze Your Finances</h3>
+            <p>Assess your financial health and get insights based on data.</p>
+        </div>
+        <div class="how-item">
+            <img src="{{ url_for('static', filename='images/goals.jpg') }}" alt="Achieve Goals">
+            <h3>Achieve Your Goals</h3>
+            <p>Set financial targets and track your progress toward success.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Why Choose Us -->
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+    <div class="why-text">
+        <h2>Why Choose Us?</h2>
+        <p>We provide expert financial guidance and advanced tools to help you achieve financial success.</p>
+        <ul>
+            <li><strong>Expert Guidance:</strong> Personalized financial advice from industry leaders.</li>
+            <li><strong>Innovative Tools:</strong> Cutting-edge solutions for financial planning.</li>
+        </ul>
+    </div>
+    <div class="why-images">
+        <img src="{{ url_for('static', filename='images/expertise.jpg') }}" alt="Expert Guidance">
+        <img src="{{ url_for('static', filename='images/tools.jpg') }}" alt="Advanced Tools">
+    </div>
+</section>
+
+
+
+
+    <!-- Testimonials -->
+   
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/client1.jpg') }}" alt="Client 1">
+            <p>"This financial tool has completely changed the way I manage my money!"</p>
+            <h3>John Doe</h3>
+            <span>Entrepreneur</span>
+        </div>
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/client2.jpg') }}" alt="Client 2">
+            <p>"The insights and guidance provided have been invaluable to my financial growth."</p>
+            <h3>Jane Smith</h3>
+            <span>Investor</span>
+        </div>
+        <div class="testimonial-card">
+            <img src="{{ url_for('static', filename='images/client3.jpg') }}" alt="Client 3">
+            <p>"A must-have for anyone serious about financial literacy!"</p>
+            <h3>Michael Lee</h3>
+            <span>Financial Analyst</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pricing -->
+<!-- Pricing Section -->
+<section class="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-container">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <h3>Basic</h3>
+            <p class="price">$9.99<span>/month</span></p>
+            <ul>
+                <li>Access to basic financial tools</li>
+                <li>Email support</li>
+                <li>Community access</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card featured">
+            <h3>Standard</h3>
+            <p class="price">$19.99<span>/month</span></p>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>Advanced financial planning</li>
+                <li>24/7 customer support</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p class="price">$29.99<span>/month</span></p>
+            <ul>
+                <li>Everything in Standard</li>
+                <li>1-on-1 financial coaching</li>
+                <li>Exclusive industry insights</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+</section>
+<!-- Call-To-Action (CTA) Section -->
+<section class="cta">
+    <div class="cta-content">
+        <h2>Take Control of Your Financial Future</h2>
+        <p>Join thousands of users who are improving their financial literacy every day.</p>
+        <a href="signIn.html" class="btn">Sign In Here</a>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Footer Column 1: About -->
+        <div class="footer-about">
+            <img src="{{ url_for('static', filename='images/logo.avif') }}" alt="Company Logo" class="footer-logo">
+            <p>Your trusted financial partner in literacy and wealth management.</p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Column 3: Contact -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@financehub.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Finance St, New York, NY</p>
+            <div class="social-icons">
+                <a href="#"><img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/twitter.avif') }}" alt="Twitter"></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 FinanceHub. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

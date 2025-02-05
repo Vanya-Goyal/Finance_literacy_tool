@@ -1,0 +1,612 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Hero Section */
+/* Hero Section - Reduced Height */
+.hero {
+    width: 100%;
+    height: 60vh; /* Reduced height (60% of viewport) */
+    background: url("../images/hero-bg.avif") no-repeat center center/cover; /* Background Image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay for Better Readability */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffc107;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #e0a800;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 40px;
+}
+/* Our Mission Section */
+.mission {
+    padding: 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+.mission-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.mission-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.mission-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mission-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+/* How It Works */
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.how-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.how-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.how-item img {
+    width: 100%;
+    max-width: 200px; /* Adjusted for a larger, more visible size */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+.how-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.how-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Why Choose Us */
+/* Why Choose Us Section */
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+}
+
+/* Text Section (Left Side) */
+.why-text {
+    flex: 1;
+    max-width: 45%;
+}
+
+.why-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.why-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.why-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-text ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Images Section (Right Side) */
+.why-images {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.why-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Testimonials */
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Testimonial Card Container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Testimonial Cards */
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Client Image */
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Client Name & Role */
+.testimonial-card h3 {
+    font-size: 1.3rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.testimonial-card span {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Testimonial Text */
+.testimonial-card p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+
+/* Pricing */
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Highlight Featured Plan */
+.featured {
+    background: yellow;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.featured .btn {
+    background: #fff;
+    color: #007bff;
+}
+
+/* Pricing Details */
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Features List */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+/* Call-To-Action Section */
+.cta {
+    .cta {
+        background: url("/static/images/cta-bg.jpg") center/cover no-repeat;
+    }
+    
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px 10%;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Footer About */
+.footer-about {
+    max-width: 300px;
+}
+
+.footer-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Quick Links */
+.footer-links h3, .footer-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Contact Info */
+.footer-contact p {
+    margin-bottom: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with width 768px or less (tablets and mobile) */
+@media screen and (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        height: 50vh;
+    }
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    /* Mission Section */
+    .mission-container {
+        flex-direction: column;
+    }
+    .mission-text,
+    .mission-image {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* How It Works Section */
+    .how-container {
+        flex-direction: column;
+    }
+
+    .how-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Why Choose Us Section */
+    .why-choose-us {
+        flex-direction: column;
+        padding: 60px 10%;
+    }
+    .why-text,
+    .why-images {
+        max-width: 100%;
+        flex: 1;
+    }
+
+    /* Testimonials Section */
+    .testimonial-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Pricing Section */
+    .pricing-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    /* Call-To-Action Section */
+    .cta {
+        padding: 60px 10%;
+    }
+
+    /* Footer Section */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* For devices with width 480px or less (small mobile screens) */
+@media screen and (max-width: 480px) {
+    /* Hero Section */
+    .hero-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Mission Section */
+    .mission-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-text p {
+        font-size: 1rem;
+    }
+
+    /* How It Works Section */
+    .how-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .how-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Pricing Section */
+    .pricing-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .pricing-card .price {
+        font-size: 1.8rem;
+    }
+
+    .pricing-card ul li {
+        font-size: 1rem;
+    }
+
+    /* Footer Section */
+    .footer-about p,
+    .footer-links ul li a,
+    .footer-contact p {
+        font-size: 0.9rem;
+    }
+}
